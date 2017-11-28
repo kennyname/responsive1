@@ -1,0 +1,211 @@
+@media only screen and (max-width: 768px) {
+  /*start nav */
+  /* line 4, ../sass/responsive.sass */
+  nav {
+    flex-direction: column;
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    left: -220px;
+    background: #333;
+    opacity: 0;
+    overflow: scroll;
+    transition: all 0.5s;
+    visibility: hidden;
+  }
+  /* line 15, ../sass/responsive.sass */
+  nav ul {
+    margin: 15px 0;
+    padding: 0;
+  }
+  /* line 18, ../sass/responsive.sass */
+  nav ul li a {
+    color: white;
+    margin: 15px;
+    display: block;
+  }
+  /* line 22, ../sass/responsive.sass */
+  nav ul li .dropdown {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+  /* line 28, ../sass/responsive.sass */
+  nav ul li .dropdown li {
+    background-color: #333;
+    padding: 1px 0 1px 8px;
+  }
+  /* line 31, ../sass/responsive.sass */
+  nav ul li .dropdown li a {
+    color: white;
+    margin: 8px 25px;
+  }
+  /* line 34, ../sass/responsive.sass */
+  nav ul .dropclose {
+    height: 100%;
+  }
+
+  /* line 36, ../sass/responsive.sass */
+  input#menu:checked ~ nav {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+  }
+
+  /* line 42, ../sass/responsive.sass */
+  label i.fa-bars {
+    color: #eee;
+    display: block;
+    position: fixed;
+    top: 3px;
+    left: 10px;
+    font-size: 25px;
+    z-index: 1000;
+  }
+
+  /*end nav */
+  /*start slideshow section */
+  /* line 54, ../sass/responsive.sass */
+  .slider {
+    border-radius: 0;
+    top: 0;
+    width: 100%;
+    margin: auto;
+  }
+
+  /*end slideshow */
+  /*start card section */
+  /* line 62, ../sass/responsive.sass */
+  .card-section {
+    flex-direction: column;
+    width: 98%;
+    margin: 5px auto 0 auto;
+    overflow: hidden;
+  }
+  /* line 67, ../sass/responsive.sass */
+  .card-section .card {
+    width: 100%;
+    margin-top: 2px;
+  }
+  /* line 70, ../sass/responsive.sass */
+  .card-section .card .front, .card-section .card .back {
+    border-radius: 0;
+  }
+
+  /*end card section */
+  /*start dev-section */
+  /* line 75, ../sass/responsive.sass */
+  .dev-section {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  /* line 78, ../sass/responsive.sass */
+  .dev-section .container {
+    width: 85%;
+    margin: 1px auto;
+  }
+
+  /*end dev-section */
+  /*start social icon */
+  /* line 85, ../sass/responsive.sass */
+  .social-icons ul li a span {
+    margin-left: 30px;
+  }
+  /* line 87, ../sass/responsive.sass */
+  .social-icons ul li a i.fa {
+    width: 150px;
+    font-size: 110%;
+    padding: 15px;
+    right: -130px;
+    border-radius: 0;
+  }
+  /* line 93, ../sass/responsive.sass */
+  .social-icons ul li a i.fa:hover {
+    right: -30px;
+  }
+
+  /*end social icons */
+  /*start form */
+  /* line 98, ../sass/responsive.sass */
+  form {
+    width: 80%;
+    left: 10%;
+    padding: 6% 7% 3% 7%;
+    /*end form */
+  }
+  /* line 102, ../sass/responsive.sass */
+  form label {
+    margin: 0;
+  }
+  /* line 104, ../sass/responsive.sass */
+  form #close {
+    top: -5px;
+    font-size: 200%;
+  }
+  /* line 107, ../sass/responsive.sass */
+  form input {
+    padding: 6px 0;
+    width: 100%;
+    margin: 0 0 8px 0;
+  }
+  /* line 111, ../sass/responsive.sass */
+  form input[type='submit'] {
+    min-width: 100px;
+  }
+}
+/*end small size */
+/*start mid size */
+@media only screen and (max-width: 1080px) and (min-width: 769px) {
+  /* line 119, ../sass/responsive.sass */
+  nav {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* line 122, ../sass/responsive.sass */
+  .slider {
+    top: 75px;
+    width: 100%;
+  }
+
+  /* line 125, ../sass/responsive.sass */
+  .card-section {
+    width: 100%;
+  }
+  /* line 127, ../sass/responsive.sass */
+  .card-section .card {
+    top: 20px;
+  }
+
+  /* line 129, ../sass/responsive.sass */
+  .dev-section {
+    width: 100%;
+  }
+  /* line 131, ../sass/responsive.sass */
+  .dev-section .container {
+    top: 5px;
+  }
+
+  /* line 134, ../sass/responsive.sass */
+  .social-icons ul li a i span {
+    margin-left: 25%;
+  }
+  /* line 136, ../sass/responsive.sass */
+  .social-icons ul li a i.fa {
+    font-size: 120%;
+  }
+  /* line 138, ../sass/responsive.sass */
+  .social-icons ul li a i.fa:hover {
+    right: 0%;
+  }
+
+  /* line 140, ../sass/responsive.sass */
+  form {
+    width: 50%;
+    left: 25%;
+    padding: 4% 5% 1% 5%;
+  }
+}
+/*end mid size */
